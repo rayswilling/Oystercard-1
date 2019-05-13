@@ -1,3 +1,5 @@
+require_relative './journey'
+
 class Oystercard
 
   attr_reader :balance, :entry_station, :exit_station, :journeys
@@ -47,5 +49,11 @@ class Oystercard
 
   def deduct(amount)
     @balance -= amount
+  end
+end
+
+class Journey
+  def initialize
+    @card = Oystercard.new
   end
 end

@@ -7,6 +7,7 @@ class Oystercard
 end
 
 let(:card) { Oystercard.new }
+let(:journey) { Journey.new }
 let(:each) { :start_journey }
 let(:entry_station){ double :station }
 let(:exit_station){ double :station }
